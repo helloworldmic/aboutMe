@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>A boy at heart</title>
+<!------------------------ added from here------------------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="./assets/css/animate.css" />
+  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/4e54208e9a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./aboutme2.css" />
+  </head>
+<!------------------------ to here  ------------------------>
+
+<!-- This is where we declare all of the external libraries our page uses
+      
+      You will need:
+      ok--Animate CSS
+      ok--Bootstrap CSS
+      ok- You own custom stylesheet
+      ok-FontAwesome
+
+      Refer to the Practice directory
+    -->
+  
+  <body data-spy="scroll" data-target=".navbar" data-offset="50" >
+   <!-- 由BS 抄下來時改為放body tag, BS 參考放div,但那個div包了全頁內容 -->
+    
+    <!------------------- Nav bar  ------------------------>
+    <!-- nav id="navbar exmaple-2" navbar-exmaple-2 -->
+     <nav id="navbar" class="navbar navbar-light  fixed-top" >  <!--del fr id: bg-light -->
+      <!--style="opacity: 30%;" -->
+      <a class="navbar-brand" href="#" style="color:rgb(50, 48, 48) ;">A BOY AT HEART</a>
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link" href="#about" style="color:rgb(50, 48, 48) ;">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#fouricons" style="color:rgb(50, 48, 48) ;">Four Buckets </a>
+        </li>
+        <li class="nav-item">
+           <a class="nav-link" href="#myfav" style="color:rgb(50, 48, 48) ;">Facinate Me</a>   <!--formerly bullshit -->
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#callme" style="color:rgb(50, 48, 48) ;">Call Me</a>
+        </li>
+      </div>
+      </ul>
+    </nav>
+
+
+    <header >
+    
+<!------------------------------- Can use Jumbotron------------------- -->
+   <!-- inline-styles in a document have the highest priority-->
+   <section class="jumbotron bg-cover" style="background-image: linear-gradient(to bottom, rgba(255,255,255,0.2) 100%,rgba(255,255,255,0.9) 100%),url(./wallpaper/alonebig.jpg);background-size:cover;">
+    <div class="container-fluid">
+    <h1 class="display-4">A Boy At Heart</h1>
+    <p class="lead">To see the spritual journey of girls who stand up all over again!</p>
+    <a href="#about" class="btn btn-primary btn-xl page-scroll" style="background-color: #21b6a8;border-radius:300px; border:none; color:white" >Explore my journey of discovery</a>
+ </div>
+</section>
+  </header>
+   <!-------------- Second Section------------------ -->
+ <section class="sectiontwo" id="about">
+   <div class="container-fluid"> 
+  <h2 class="header-content-inner" >Want to share your story?</h2>
+  <p>Here you can meet a lot of girls who try hard to survive from life traumas. They are brave and strong enough to share their stories. Each will strike your chord.</p>
+  <a href="https://www.youtube.com/watch?v=rZUTFDjDZSQ" class="btn btn-primary" style="background-color:white;border-radius:300px; border:none; color:black">Read their journeys of discovery</a>
+  </div>
+</section>
+
+ <!---------------------------------- Four icons-------------------------------- -->
+       <div class='row container-fluid' id="fouricons">    <!--wrong:row2, must use bootstrap keyword:row -->
+        <!-- why must i put all 4 into a div,otherwise will just show normal flow -->
+      <div class= 'col-lg-6 p-0'> 
+         <i class="fas fa-heartbeat fa-7x" style="color: #1d9d90;"></i>       <!--also add into class fa-spin -->
+        <h6>Health Is Wealth.</h6></div>
+      <div class= 'col-lg-6 p-0'> 
+         <i class="fas fa-user-friends fa-7x" style="color: #1d9d90;"></i>     <!--#21b6a8 -->
+        <h6>The Best People In Life Are Free.</h6></div>
+      <div class= 'col-lg-6 p-0'> 
+        <i class="fas fa-home fa-7x" style="color: #1d9d90;"></i>
+        <h6>Family Is The Greatest Blessing In Life.</h6></div>
+      <div class= 'col-lg-6 p-0'>
+         <i class="fas fa-briefcase fa-7x" style="color: #1d9d90;"></i>
+         <h6>Work Gives You A Purpose Every Day.</h6></div>
+      </div>
+
+
+
+
+<!--------------------- Four pictures with overlay when hover------------------- -->
+<div class="container-fluid">
+    <div class="row" id="myfav">        <!-- <section id="photos"> -->
+        <div class="bigbox col-xl-3 col-lg-3 col-md-6 p-0" >
+            <img class="pic" src="./f1-hug.jpeg" alt="">
+            <div class='overlay'><span class="something">Something Cute</span></div> 
+        </div>
+        <div class="bigbox col-xl-3 col-lg-3 col-md-6 p-0" >
+          <img class="pic" src="./f2-fish.jpeg" alt="">
+          <div class='overlay'><span class="something">Something Funny</span></div>
+        </div>
+        <div class="bigbox col-xl-3 col-lg-3 col-md-6 p-0" >
+          <img class="pic" src="./f3-food.jpeg" alt="">
+          <div class='overlay'><span class="something">Something Yummy</span></div>
+        </div>
+        <div class="bigbox col-xl-3 col-lg-3 col-md-6 p-0" >
+          <img class="pic" src="./f4-art.jpeg" alt="">
+          <div class='overlay'><span class="something">Something Aesthetic</span></div>
+        </div>
+        <h3 class="animate__animated animate__bounce"> Home is where the heart is. </h3>
+    <!-- </section> -->
+
+    </div>
+</div>
+
+
+   
+ <!----------------------- contact me container ------------------------->
+ <div class='container' id='callme'>
+   <h2>Share your story to me</h2>
+   <div class="form-floating mb-3">
+    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+    <label for="floatingInput">Email address</label>
+  </div>
+
+  <!-- <div class="form-floating">
+    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+    <label for="floatingPassword">Password</label>
+  </div> -->
+  <div class="form-floating">
+    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+    <label for="floatingTextarea2">Comments</label>
+  </div>
+  <!-- https://getbootstrap.com/docs/5.1/forms/floating-labels/ -->
+   </br>
+  <!-- <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">Your Message</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div> -->
+
+
+
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit">Send</button>
+  </div>
+ </div>
+ 
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+     <script src='./aboutme.js'></script>
+    </body>
+</html>
+
+
+  <!-- All scripts we need jquery, bootstrap, smooth scroll, local script -->
+
+    
+
+
+     
